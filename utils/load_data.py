@@ -238,7 +238,7 @@ def load_histopathologyGray(args, **kwargs):
 
     # start processing
     with open('datasets/HistopathologyGray/histopathology.pkl', 'rb') as f:
-        data = pickle.load(f)
+        data = pickle.load(f, encoding='latin1')
 
     x_train = np.asarray(data['training']).reshape(-1, 28 * 28)
     x_val = np.asarray(data['validation']).reshape(-1, 28 * 28)
@@ -283,7 +283,7 @@ def load_freyfaces(args, TRAIN = 1565, VAL = 200, TEST = 200, **kwargs):
 
     # start processing
     with open('datasets/Freyfaces/freyfaces.pkl', 'rb') as f:
-        data = pickle.load(f)
+        data = pickle.load(f, encoding='latin1')
 
     data = (data[0] + 0.5) / 256.
 
