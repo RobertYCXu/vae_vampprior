@@ -1,0 +1,17 @@
+standard prior, VAE, on cifar 10
+LogL (TEST): 13822.71
+LogL (TRAIN): 0.00
+ELBO (TEST): 13912.46
+ELBO (TRAIN): 13692.28
+Loss: 13911.87
+RE: 13787.48
+KL: 124.39
+
+standard prior, VAE, on freyfaces
+LogL (TEST): 1799.27
+LogL (TRAIN): 0.00
+ELBO (TEST): 1827.62
+ELBO (TRAIN): 1701.88
+Loss: 1827.47
+RE: 1729.71
+KL: 97.76
