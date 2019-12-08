@@ -33,3 +33,12 @@ ELBO (TRAIN): 1588.81
 Loss: 1785.99
 RE: 1713.16
 KL: 72.83
+
+vamp prior, CONVHVAE_2level, on freyfaces
+LogL (TEST): 1736.48
+LogL (TRAIN): 0.00
+ELBO (TEST): 1773.68
+ELBO (TRAIN): 1593.12
+Loss: 1774.76
+RE: 1719.76
+KL: 55.00
