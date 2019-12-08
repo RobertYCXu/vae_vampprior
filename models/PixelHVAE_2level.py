@@ -17,7 +17,7 @@ from utils.visual_evaluation import plot_histogram
 from utils.nn import he_init, GatedDense, NonLinear, \
     Conv2d, GatedConv2d, MaskedConv2d, ResUnitBN, MaskedGatedConv2d
 
-from Model import Model
+from .Model import Model
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 #=======================================================================================================================
