@@ -4,7 +4,7 @@ import numpy as np
 
 import math
 
-from scipy.speciel import logsumexp
+from scipy.special import logsumexp
 
 
 import torch
