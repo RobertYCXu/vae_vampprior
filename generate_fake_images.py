@@ -44,4 +44,4 @@ samples = model.generate_x(25)
 input_size = list(samples[0].shape)
 
 for i, data in enumerate(samples):
-    plot_images(x_mean.data.cpu().numpy()[0:9], path + "/{}/".format(folder), 'fake{}'.format(i), 3, 3, input_size)
+    plot_images(data.cpu().numpy()[0:9], path + "/{}/".format(folder), 'fake{}'.format(i), 3, 3, input_size)
