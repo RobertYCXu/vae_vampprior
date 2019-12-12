@@ -32,48 +32,16 @@ def plot_images(args, x_sample, dir, file_name, size_x=3, size_y=3, input_size=(
     plt.savefig(path + file_name + '.png', bbox_inches='tight')
     plt.close(fig)
 
-path = sys.argv[0]
-folder1 = sys.argv[1]
-folder2 = sys.argv[2]
+path = sys.argv[1]
+folder = sys.argv[2]
 
 BATCH_SIZE = 100
 
-model = torch.load("/content/vae_frey_faces_standard_vae.model")
+model = torch.load(path)
 model.eval()
 
-path = "/content/vae_vampprior/"
-input_size = [1, 28, 20]
+samples = model.generate_x(25)
+input_size = list(samples[0].shape)
 
-# start processing
-# TODO: make this modular
-with open('datasets/Freyfaces/freyfaces.pkl', 'rb') as f:
-    data = pickle.load(f, encoding='latin1')
-
-data = (data[0] + 0.5) / 256.
-
-x_test = data.reshape(-1, 28*20)
-
-# pytorch data loader
-test = data_utils.TensorDataset(torch.from_numpy(x_test).float(), torch.from_numpy(y_test))
-test_loader = data_utils.DataLoader(test, batch_size=BATCH_SIZE, shuffle=True)
-
-for batch_idx, (data, target) in enumerate(test_loader):
-    try:
-        data, target = data.cuda(), target.cuda()
-    except:
-        continue
-
-    data, target = Variable(data), Variable(target)
-
-    x = data
-
-    if not os.path.exists(path + "/{}/".format(folder1)):
-        os.makedirs(path + "/{}/".format(folder1))
-
-    if not os.path.exists(path + "/{}/".format(folder2)):
-        os.makedirs(path + "/{}/".format(folder2))
-
-    plot_images(args, data.data.cpu().numpy()[0:9], path + "/{}/".format(folder1), 'real{}'.format(batch_idx), 3, 3, input_size)
-    x_mean = model.reconstruct_x(x)
-    plot_images(args, x_mean.data.cpu().numpy()[0:9], path + "/{}/".format(folder2), 'fake{}'.format(batch_idx), 3, 3, input_size)
-
+for i, data in enumerate(samples):
+    plot_images(args, x_mean.data.cpu().numpy()[0:9], path + "/{}/".format(folder), 'fake{}'.format(i), 3, 3, input_size)
