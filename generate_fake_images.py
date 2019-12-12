@@ -7,19 +7,14 @@ import matplotlib.pyplot as plt
 from utils.evaluation import evaluate_vae as evaluate
 import matplotlib.gridspec as gridspec
 import sys
+from PIL import Image
+import os
 
-def plot_images(x_sample, dir, file_name, size_x=3, size_y=3, input_size=(1, 28, 28), input_type="binary"):
-
-    fig = plt.figure(figsize=(size_x, size_y))
-    gs = gridspec.GridSpec(size_x, size_y)
-    gs.update(wspace=0.05, hspace=0.05)
+def plot_images(x_sample, dir, input_size=(1, 28, 28), input_type="binary"):
 
     for i, sample in enumerate(x_sample):
-        ax = plt.subplot(gs[i])
+        fig = plt.figure()
         plt.axis('off')
-        ax.set_xticklabels([])
-        ax.set_yticklabels([])
-        ax.set_aspect('equal')
         sample = sample.reshape(input_size)
         sample = sample.swapaxes(0, 2)
         sample = sample.swapaxes(0, 1)
@@ -29,8 +24,9 @@ def plot_images(x_sample, dir, file_name, size_x=3, size_y=3, input_size=(1, 28,
         else:
             plt.imshow(sample)
 
-    plt.savefig(path + file_name + '.png', bbox_inches='tight')
-    plt.close(fig)
+        print("image saved: {}{}".format(dir, i))
+        plt.savefig("{}{}.png".format(dir, i), bbox_inches='tight')
+        plt.close(fig)
 
 path = sys.argv[1]
 folder = sys.argv[2]
@@ -40,8 +36,10 @@ BATCH_SIZE = 100
 model = torch.load(path)
 model.eval()
 
-samples = model.generate_x(25)
-input_size = list(samples[0].shape)
+samples_x = model.generate_x(500)
+input_size = [1, 28, 20]
 
-for i, data in enumerate(samples):
-    plot_images(data.cpu().numpy()[0:9], path + "/{}/".format(folder), 'fake{}'.format(i), 3, 3, input_size)
+if not os.path.exists("/content/vae_vampprior/output/{}/".format(folder)):
+    os.makedirs("/content/vae_vampprior/output/{}/".format(folder))
+plot_images(samples_x.cpu().detach().numpy(), "/content/vae_vampprior/output/{}/".format(folder), input_size)
+
