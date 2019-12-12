@@ -8,7 +8,7 @@ from utils.evaluation import evaluate_vae as evaluate
 import matplotlib.gridspec as gridspec
 import sys
 
-def plot_images(args, x_sample, dir, file_name, size_x=3, size_y=3, input_size=(1, 28, 28), input_type="binary"):
+def plot_images(x_sample, dir, file_name, size_x=3, size_y=3, input_size=(1, 28, 28), input_type="binary"):
 
     fig = plt.figure(figsize=(size_x, size_y))
     gs = gridspec.GridSpec(size_x, size_y)
@@ -44,4 +44,4 @@ samples = model.generate_x(25)
 input_size = list(samples[0].shape)
 
 for i, data in enumerate(samples):
-    plot_images(args, x_mean.data.cpu().numpy()[0:9], path + "/{}/".format(folder), 'fake{}'.format(i), 3, 3, input_size)
+    plot_images(x_mean.data.cpu().numpy()[0:9], path + "/{}/".format(folder), 'fake{}'.format(i), 3, 3, input_size)
