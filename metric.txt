@@ -7,6 +7,15 @@ Loss: 13911.87
 RE: 13787.48
 KL: 124.39
 
+vamp prior, HVAE_2level, on cifar 10
+LogL (TEST): 13388.20
+LogL (TRAIN): 0.00
+ELBO (TEST): 13496.18
+ELBO (TRAIN): 13212.72
+Loss: 13496.28
+RE: 13284.36
+KL: 211.92
+
 standard prior, VAE, on freyfaces
 LogL (TEST): 1799.27
 LogL (TRAIN): 0.00
