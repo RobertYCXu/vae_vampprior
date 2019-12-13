@@ -79,4 +79,12 @@ Loss: 1774.76
 RE: 1719.76
 KL: 55.00
 
-
+standard prior, PixelHVAE_2level, on freyfaces
+FINAL EVALUATION ON TEST SET
+LogL (TEST): 1726.67
+LogL (TRAIN): 0.00
+ELBO (TEST): 1758.22
+ELBO (TRAIN): 1686.05
+Loss: 1757.44
+RE: 1687.18
+KL: 70.25
