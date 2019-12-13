@@ -13,7 +13,8 @@ import os
 def plot_images(x_sample, dir, input_size=(1, 28, 28), input_type="binary"):
 
     for i, sample in enumerate(x_sample):
-        fig = plt.figure()
+        fig = plt.figure(figsize=(1/2.75, 1/2.75))
+        fig.subplots_adjust(wspace=0, hspace=0)
         plt.axis('off')
         sample = sample.reshape(input_size)
         sample = sample.swapaxes(0, 2)
@@ -23,9 +24,8 @@ def plot_images(x_sample, dir, input_size=(1, 28, 28), input_type="binary"):
             plt.imshow(sample, cmap='gray')
         else:
             plt.imshow(sample)
-
         print("image saved: {}{}".format(dir, i))
-        plt.savefig("{}{}.png".format(dir, i), bbox_inches='tight')
+        plt.savefig("{}{}.png".format(dir, i), bbox_inches='tight', pad_inches=0)
         plt.close(fig)
 
 path = sys.argv[1]
@@ -42,4 +42,3 @@ input_size = [1, 28, 20]
 if not os.path.exists("/content/vae_vampprior/output/{}/".format(folder)):
     os.makedirs("/content/vae_vampprior/output/{}/".format(folder))
 plot_images(samples_x.cpu().detach().numpy(), "/content/vae_vampprior/output/{}/".format(folder), input_size)
-
