@@ -2,3 +2,4 @@
 *.pyc
 __pycache__
 snapshots
+datasets/Cifar10
