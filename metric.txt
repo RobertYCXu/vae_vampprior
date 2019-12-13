@@ -122,13 +122,13 @@ IS: 1.98
 FID: 488.56
 
 vamp prior, PIXELHVAE_2level, on freyfaces
-LogL (TEST): 
+LogL (TEST): 1766.87
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
+ELBO (TEST): 1799.37
+ELBO (TRAIN): 1700.77
+Loss: 1800.35
+RE: 1741.81
+KL: 58.54
 IS:
 FID:
 
