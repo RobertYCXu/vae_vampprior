@@ -5,3 +5,36 @@ Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=False, dataset_n
 Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=False, dataset_name='freyfaces', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 20], input_type='gray', lr=0.0005, model_name='vae', model_signature='2019-12-07 17:14:51', no_cuda=False, number_components=500, prior='vampprior', pseudoinputs_mean=0.5, pseudoinputs_std=0.02, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
 Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=False, dataset_name='freyfaces', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 20], input_type='gray', lr=0.0005, model_name='vae', model_signature='2019-12-07 17:16:10', no_cuda=False, number_components=500, prior='vampprior', pseudoinputs_mean=0.5, pseudoinputs_std=0.02, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
 Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=False, dataset_name='freyfaces', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 20], input_type='gray', lr=0.0005, model_name='vae', model_signature='2019-12-07 17:36:11', no_cuda=False, number_components=500, prior='vampprior', pseudoinputs_mean=0.5, pseudoinputs_std=0.02, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
+Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=True, dataset_name='static_mnist', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 28], input_type='binary', lr=0.0005, model_name='vae', model_signature='2019-12-12 23:01:47', no_cuda=False, number_components=500, prior='vampprior', pseudoinputs_mean=0.05, pseudoinputs_std=0.01, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
+FINAL EVALUATION ON TEST SET
+LogL (TEST): 85.83
+LogL (TRAIN): 0.00
+ELBO (TEST): 91.40
+ELBO (TRAIN): 85.14
+Loss: 91.46
+RE: 63.73
+KL: 27.73
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=True, dataset_name='static_mnist', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 28], input_type='binary', lr=0.0005, model_name='hvae_2level', model_signature='2019-12-13 00:45:48', no_cuda=False, number_components=500, prior='vampprior', pseudoinputs_mean=0.05, pseudoinputs_std=0.01, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
+FINAL EVALUATION ON TEST SET
+LogL (TEST): 84.85
+LogL (TRAIN): 0.00
+ELBO (TEST): 90.91
+ELBO (TRAIN): 84.68
+Loss: 90.95
+RE: 60.72
+KL: 30.23
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=True, dataset_name='static_mnist', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 28], input_type='binary', lr=0.0005, model_name='convhvae_2level', model_signature='2019-12-13 02:55:26', no_cuda=False, number_components=500, prior='vampprior', pseudoinputs_mean=0.05, pseudoinputs_std=0.01, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
+FINAL EVALUATION ON TEST SET
+LogL (TEST): 81.70
+LogL (TRAIN): 0.00
+ELBO (TEST): 86.30
+ELBO (TRAIN): 82.44
+Loss: 86.27
+RE: 56.79
+KL: 29.48
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
