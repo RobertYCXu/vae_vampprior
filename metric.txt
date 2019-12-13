@@ -6,24 +6,8 @@ ELBO (TRAIN): 13692.28
 Loss: 13911.87
 RE: 13787.48
 KL: 124.39
-
-vamp prior, VAE, on cifar 10
-LogL (TEST): 13821.96
-LogL (TRAIN): 0.00
-ELBO (TEST): 13911.73
-ELBO (TRAIN): 13671.04
-Loss: 13910.77
-RE: 13787.67
-KL: 123.10
-
-vamp prior, HVAE_2level, on cifar 10
-LogL (TEST): 13388.20
-LogL (TRAIN): 0.00
-ELBO (TEST): 13496.18
-ELBO (TRAIN): 13212.72
-Loss: 13496.28
-RE: 13284.36
-KL: 211.92
+IS:
+FID:
 
 standard prior, HVAE_2level, on cifar 10
 LogL (TEST): 13389.48
@@ -33,6 +17,32 @@ ELBO (TRAIN): 13152.10
 Loss: 13508.42
 RE: 13288.27
 KL: 220.15
+IS:
+FID:
+
+vamp prior, VAE, on cifar 10
+LogL (TEST): 13821.96
+LogL (TRAIN): 0.00
+ELBO (TEST): 13911.73
+ELBO (TRAIN): 13671.04
+Loss: 13910.77
+RE: 13787.67
+KL: 123.10
+IS:
+FID:
+
+vamp prior, HVAE_2level, on cifar 10
+LogL (TEST): 13388.20
+LogL (TRAIN): 0.00
+ELBO (TEST): 13496.18
+ELBO (TRAIN): 13212.72
+Loss: 13496.28
+RE: 13284.36
+KL: 211.92
+IS:
+FID:
+
+--------------------------------------------------------------------------------
 
 standard prior, VAE, on freyfaces
 LogL (TEST): 1799.27
@@ -42,6 +52,8 @@ ELBO (TRAIN): 1701.88
 Loss: 1827.47
 RE: 1729.71
 KL: 97.76
+IS: 1.20
+FID: 557.56
 
 standard prior, HVAE_2level, on freyfaces
 LogL (TEST): 1795.56
@@ -51,6 +63,8 @@ ELBO (TRAIN): 1702.61
 Loss: 1829.76
 RE: 1730.05
 KL: 99.71
+IS: 1.34
+FID: 568.63
 
 standard prior, CONVHVAE_2level, on freyfaces
 LogL (TEST): 1735.46
@@ -60,6 +74,30 @@ ELBO (TRAIN): 1588.81
 Loss: 1785.99
 RE: 1713.16
 KL: 72.83
+IS: 1.34
+FID: 462.91
+
+standard prior, PIXELHVAE_2level, on freyfaces
+LogL (TEST): 1726.67
+LogL (TRAIN): 0.00
+ELBO (TEST): 1758.22
+ELBO (TRAIN): 1686.05
+Loss: 1757.44
+RE: 1687.18
+KL: 70.25
+IS:
+FID:
+
+vamp prior, VAE, on freyfaces
+LogL (TEST): 1760.84
+LogL (TRAIN): 0.00
+ELBO (TEST): 1788.95
+ELBO (TRAIN): 1685.80
+Loss: 1790.23
+RE: 1725.87
+KL: 64.36
+IS: 2.08
+FID: 469.47
 
 vamp prior, HVAE_2level, on freyfaces
 LogL (TEST): 1760.84
@@ -69,6 +107,8 @@ ELBO (TRAIN): 1685.80
 Loss: 1790.23
 RE: 1725.87
 KL: 64.36
+IS: 2.49
+FID: 490.02
 
 vamp prior, CONVHVAE_2level, on freyfaces
 LogL (TEST): 1736.48
@@ -78,5 +118,107 @@ ELBO (TRAIN): 1593.12
 Loss: 1774.76
 RE: 1719.76
 KL: 55.00
+IS: 1.98
+FID: 488.56
 
+vamp prior, PIXELHVAE_2level, on freyfaces
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS:
+FID:
+
+--------------------------------------------------------------------------------
+
+standard prior, VAE, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS: 
+FID: 
+
+standard prior, HVAE_2level, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS: 
+FID: 
+
+standard prior, CONVHVAE_2level, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS: 
+FID: 
+
+standard prior, PIXELHVAE_2level, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS:
+FID:
+
+vamp prior, VAE, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS: 
+FID: 
+
+vamp prior, HVAE_2level, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS: 
+FID: 
+
+vamp prior, CONVHVAE_2level, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS: 
+FID: 
+
+vamp prior, PIXELHVAE_2level, on static MNIST
+LogL (TEST): 
+LogL (TRAIN): 0.00
+ELBO (TEST): 
+ELBO (TRAIN): 
+Loss: 
+RE: 
+KL: 
+IS:
+FID:
 
