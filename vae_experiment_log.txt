@@ -50,3 +50,14 @@ RE: 2729.45
 KL: 82.71
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=True, dataset_name='fashion_mnist', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 28], input_type='gray', lr=0.0005, model_name='hvae_2level', model_signature='2019-12-15 02:51:35', no_cuda=False, number_components=500, prior='standard', pseudoinputs_mean=0.05, pseudoinputs_std=0.01, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
+FINAL EVALUATION ON TEST SET
+LogL (TEST): 2740.01
+LogL (TRAIN): 0.00
+ELBO (TEST): 2791.68
+ELBO (TRAIN): 2715.53
+Loss: 2791.43
+RE: 2691.10
+KL: 100.33
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
