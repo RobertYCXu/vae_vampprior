@@ -136,13 +136,13 @@ def load_fashion_mnist(args, **kwargs):
 
     # start processing
     from torchvision import datasets, transforms
-    train_loader = torch.utils.data.DataLoader( datasets.FashionMNIST('../datasets/MNIST_fashion', train=True, download=True,
+    train_loader = torch.utils.data.DataLoader( datasets.FashionMNIST('./datasets', train=True, download=True,
                                                                transform=transforms.Compose([
                                                                    transforms.ToTensor()
                                                                ])),
                                                 batch_size=args.batch_size, shuffle=True)
 
-    test_loader = torch.utils.data.DataLoader( datasets.FashionMNIST('../../datasets/MNIST_fashion', train=False,
+    test_loader = torch.utils.data.DataLoader( datasets.FashionMNIST('./datasets', train=False,
                                                               transform=transforms.Compose([transforms.ToTensor()
                                                                         ])),
                                                batch_size=args.batch_size, shuffle=True)
