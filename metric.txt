@@ -247,26 +247,24 @@ IS: 4.13
 FID: 76.97
 
 standard prior, CONVHVAE_2level, on fashion MNIST
-LogL (TEST):  
+LogL (TEST):
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
+ELBO (TEST):
+ELBO (TRAIN):
+Loss:
+RE:
+KL:
 IS: 3.66
-FID: 
+FID:
 
 standard prior, PIXELHVAE_2level, on fashion MNIST
-LogL (TEST): 
+LogL (TEST): 2530.65
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
-IS: 
-FID: 
+ELBO (TEST): 2548.01
+ELBO (TRAIN): 2539.68
+Loss: 2547.84
+RE: 2512.81
+KL: 35.02
 
 vamp prior, VAE, on fashion MNIST
 LogL (TEST): 2754.60
@@ -291,23 +289,23 @@ IS: 4.51
 FID: 66.21
 
 vamp prior, CONVHVAE_2level, on fashion MNIST
-LogL (TEST): 
+LogL (TEST):
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
+ELBO (TEST):
+ELBO (TRAIN):
+Loss:
+RE:
+KL:
 IS: 4.22
 FID: 135.27
 
 vamp prior, PIXELHVAE_2level, on fashion MNIST
-LogL (TEST): 
+LogL (TEST):
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
-IS: 
-FID:  
+ELBO (TEST):
+ELBO (TRAIN):
+Loss:
+RE:
+KL:
+IS:
+FID:
