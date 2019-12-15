@@ -3,3 +3,4 @@
 __pycache__
 snapshots
 datasets/Cifar10
+.DS_STORE
