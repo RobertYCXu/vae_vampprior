@@ -11,7 +11,6 @@ from PIL import Image
 import os
 
 def plot_images(x_sample, dir, input_size=(1, 28, 28), input_type="binary"):
-
     for i, sample in enumerate(x_sample):
         fig = plt.figure(figsize=(1/2.75, 1/2.75))
         fig.subplots_adjust(wspace=0, hspace=0)
@@ -30,6 +29,9 @@ def plot_images(x_sample, dir, input_size=(1, 28, 28), input_type="binary"):
 
 path = sys.argv[1]
 folder = sys.argv[2]
+x = sys.argv[3]
+y = sys.argv[4]
+z = sys.argv[5]
 
 BATCH_SIZE = 100
 
@@ -37,8 +39,8 @@ model = torch.load(path)
 model.eval()
 
 samples_x = model.generate_x(500)
-input_size = [1, 28, 20]
+input_size = [x, y, z]
 
-if not os.path.exists("/content/vae_vampprior/output/{}/".format(folder)):
-    os.makedirs("/content/vae_vampprior/output/{}/".format(folder))
-plot_images(samples_x.cpu().detach().numpy(), "/content/vae_vampprior/output/{}/".format(folder), input_size)
+if not os.path.exists("/vae_vampprior/output/{}/".format(folder)):
+    os.makedirs("/vae_vampprior/output/{}/".format(folder))
+plot_images(samples_x.cpu().detach().numpy(), "/vae_vampprior/output/{}/".format(folder), input_size)
