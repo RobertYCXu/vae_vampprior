@@ -269,13 +269,13 @@ IS:
 FID: 
 
 vamp prior, VAE, on fashion MNIST
-LogL (TEST): 
+LogL (TEST): 2754.60
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
+ELBO (TEST): 2795.69
+ELBO (TRAIN): 2728.79
+Loss: 2795.56
+RE: 2723.40
+KL: 72.16
 IS: 
 FID: 
 
