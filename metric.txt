@@ -236,13 +236,13 @@ IS:
 FID: 
 
 standard prior, HVAE_2level, on fashion MNIST
-LogL (TEST): 
+LogL (TEST): 2740.01
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
+ELBO (TEST): 2791.68
+ELBO (TRAIN): 2715.53
+Loss: 2791.43
+RE: 2691.10
+KL: 100.33
 IS: 
 FID: 
 
@@ -280,13 +280,13 @@ IS:
 FID: 
 
 vamp prior, HVAE_2level, on fashion MNIST
-LogL (TEST): 
+LogL (TEST): 2734.17
 LogL (TRAIN): 0.00
-ELBO (TEST): 
-ELBO (TRAIN): 
-Loss: 
-RE: 
-KL: 
+ELBO (TEST): 2784.70
+ELBO (TRAIN): 2701.44
+Loss: 2784.27
+RE: 2687.47
+KL: 96.81
 IS: 
 FID: 
 
