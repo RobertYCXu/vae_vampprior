@@ -232,8 +232,8 @@ ELBO (TRAIN): 2745.64
 Loss: 2812.16
 RE: 2729.45
 KL: 82.71
-IS: 
-FID: 
+IS: 4.18
+FID: 91.02
 
 standard prior, HVAE_2level, on fashion MNIST
 LogL (TEST): 2740.01
@@ -243,8 +243,8 @@ ELBO (TRAIN): 2715.53
 Loss: 2791.43
 RE: 2691.10
 KL: 100.33
-IS: 
-FID: 
+IS: 4.13
+FID: 76.97
 
 standard prior, CONVHVAE_2level, on fashion MNIST
 LogL (TEST):  
@@ -254,7 +254,7 @@ ELBO (TRAIN):
 Loss: 
 RE: 
 KL: 
-IS: 
+IS: 3.66
 FID: 
 
 standard prior, PIXELHVAE_2level, on fashion MNIST
@@ -276,8 +276,8 @@ ELBO (TRAIN): 2728.79
 Loss: 2795.56
 RE: 2723.40
 KL: 72.16
-IS: 
-FID: 
+IS: 5.12
+FID: 68.11
 
 vamp prior, HVAE_2level, on fashion MNIST
 LogL (TEST): 2734.17
@@ -287,8 +287,8 @@ ELBO (TRAIN): 2701.44
 Loss: 2784.27
 RE: 2687.47
 KL: 96.81
-IS: 
-FID: 
+IS: 4.51
+FID: 66.21
 
 vamp prior, CONVHVAE_2level, on fashion MNIST
 LogL (TEST): 
@@ -298,8 +298,8 @@ ELBO (TRAIN):
 Loss: 
 RE: 
 KL: 
-IS: 
-FID: 
+IS: 4.22
+FID: 135.27
 
 vamp prior, PIXELHVAE_2level, on fashion MNIST
 LogL (TEST): 
