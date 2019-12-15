@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+"""This script is used to arrange a number of images into a matrix "collage" using OpenCV"""
 
 import argparse
 import itertools
