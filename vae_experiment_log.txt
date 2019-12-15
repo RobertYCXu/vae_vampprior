@@ -61,3 +61,14 @@ RE: 2691.10
 KL: 100.33
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+Namespace(MB=100, S=5000, activation=None, batch_size=100, cuda=True, dataset_name='fashion_mnist', dynamic_binarization=False, early_stopping_epochs=50, epochs=2000, input_size=[1, 28, 28], input_type='gray', lr=0.0005, model_name='convhvae_2level', model_signature='2019-12-15 05:53:14', no_cuda=False, number_components=500, prior='standard', pseudoinputs_mean=0.05, pseudoinputs_std=0.01, seed=14, test_batch_size=100, use_training_data_init=False, warmup=100, z1_size=40, z2_size=40)
+FINAL EVALUATION ON TEST SET
+LogL (TEST): 2787.29
+LogL (TRAIN): 0.00
+ELBO (TEST): 2853.96
+ELBO (TRAIN): 2841.39
+Loss: 2854.47
+RE: 2748.74
+KL: 105.73
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
