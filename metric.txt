@@ -289,13 +289,13 @@ IS: 4.51
 FID: 66.21
 
 vamp prior, CONVHVAE_2level, on fashion MNIST
-LogL (TEST):
+LogL (TEST): 2768.67
 LogL (TRAIN): 0.00
-ELBO (TEST):
-ELBO (TRAIN):
-Loss:
-RE:
-KL:
+ELBO (TEST): 2800.75
+ELBO (TRAIN): 2779.56
+Loss: 2800.95
+RE: 2634.76
+KL: 166.19
 IS: 4.22
 FID: 135.27
 
