@@ -1,35 +1,3 @@
-#!/usr/bin/env python
-
-#Source : https://github.com/myleott/mnist_png
-
-## -----------  TO DO IN FUTURE ---------------
-
-#1. make the path recognition OS independent
-#2. do a file-exists check before execution
-
-## -----------  INTRODUCTION ---------------
-
-# this script assumes that the following files are in the same location as the script. 
-# So your folder / directory should look something like this:
-# 
-# --- mnist_jpg.py
-# --- train-images.idx3-ubyte
-# --- train-labels.idx1-ubyte
-# --- t10k-images.idx3-ubyte
-# --- t10k-labels.idx1-ubyte
-# --- output
-
-# ------------------- USAGE --------------------------
-# > python scriptname output 
-#
-
-# On Windows - The results will be saved in the same folder as the argument passed. So if you pass a different folder name instead of Output in the argument, the script will create that folder and save the results in that.
-# On Linux and Mac - not tested yet
-# Make sure the MNIST file names as the same as the ones mentioned above 
-# Make sure you have the dependencies installed 
-
-
-
 import os
 import struct
 import sys
@@ -38,9 +6,6 @@ import numpy
 from array import array
 from os import path
 from PIL import Image #imported from pillow
-
-
-
 
 # funtion to read the MNIST dataset 
 
